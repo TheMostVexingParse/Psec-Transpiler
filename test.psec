@@ -1,0 +1,23 @@
+başla
+adım = 2
+asallar = 0
+maxdeğer = 500000
+:asaldöngüsü
+limit = float Math.Pow(adım, 0.5)+1
+sayac = 1
+:döngü
+    sayac += 1
+    eğer sayac > limit ise {
+		asallar += 1
+		git tekrarla
+	}
+    eğer adım % sayac == 0 ise git tekrarla
+    git döngü
+:tekrarla
+    eğer adım == maxdeğer ise git son
+    adım += 1
+    git asaldöngüsü
+:son
+yaz ( string maxdeğer )+"'e kadar "+( string asallar)+" asal var"
+bitir
+
